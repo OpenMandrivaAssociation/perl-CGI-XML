@@ -13,6 +13,7 @@ Source0:	%{module}-%{version}.tar.bz2
 BuildRequires:	perl-XML-Parser
 BuildRequires:	perl-devel >= 5.6
 Requires:	perl >= 5.6
+BuildRoot: 	%{_tmppath}/%{name}-%{version}-buildroot
 Obsoletes:	perl-XML-CGI
 Provides:	perl-XML-CGI
 Buildarch: noarch
