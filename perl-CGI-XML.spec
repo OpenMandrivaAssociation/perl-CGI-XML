@@ -1,6 +1,6 @@
 %define module 	CGI-XML
 %define version 0.1
-%define release %mkrel 8
+%define release %mkrel 9
 
 Summary:	CGI-XML perl module
 Name: 		perl-%{module}
