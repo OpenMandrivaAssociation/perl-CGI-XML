@@ -11,6 +11,7 @@ Group:		Development/Perl
 URL:		ftp://ftp.perl.org/pub/CPAN/modules/by-module/CGI/
 Source0:	%{upstream_name}-%{upstream_version}.tar.bz2
 
+BuildRequires:	make
 BuildRequires:	perl-devel
 BuildRequires:	perl(XML::Parser)
 
