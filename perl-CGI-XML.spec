@@ -1,15 +1,13 @@
 %define upstream_name 	 CGI-XML
-%define upstream_version 0.1
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	6
+Version:	0.1
+Release:	7
 
 Summary:	CGI-XML perl module
 License:	GPL+ or Artistic
 Group:		Development/Perl
 URL:		ftp://ftp.perl.org/pub/CPAN/modules/by-module/CGI/
-Source0:	https://cpan.metacpan.org/authors/id/E/EI/EISEN/CGI-XML-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/E/EI/EISEN/CGI-XML-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -23,7 +21,7 @@ BuildArch:  noarch
 CGI-XML converts CGI.pm variables to XML and vice versa.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 CFLAGS="%{optflags}" perl Makefile.PL INSTALLDIRS=vendor
@@ -47,9 +45,7 @@ install -d %{buildroot}%{_datadir}
 
 * Fri Feb 12 2010 Jérôme Quelin <jquelin@mandriva.org> 0.100.0-1mdv2011.0
 + Revision: 504608
-- rebuild using %%perl_convert_version
-
-* Fri Sep 04 2009 Thierry Vignaud <tv@mandriva.org> 0.1-9mdv2010.0
+- rebuild using %0.1 Fri Sep 04 2009 Thierry Vignaud <tv@mandriva.org> 0.1-9mdv2010.0
 + Revision: 430317
 - rebuild
 
