@@ -1,13 +1,14 @@
 %define upstream_name 	 CGI-XML
+%define upstream_version 0.1
 Name:		perl-%{upstream_name}
 Version:	0.1
-Release:	7
+Release:	1
 
 Summary:	CGI-XML perl module
 License:	GPL+ or Artistic
 Group:		Development/Perl
 URL:		ftp://ftp.perl.org/pub/CPAN/modules/by-module/CGI/
-Source0:	https://cpan.metacpan.org/authors/id/E/EI/EISEN/CGI-XML-%{version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/E/EI/EISEN/CGI-XML-0.1.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
